@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://hospital-management-system-oknn.onrender.com/api",
+  baseURL: `${import.meta.env.VITE_BACKEND_URI}/api`,
 });
 
 export const setAuthToken = (token) => {
